@@ -129,6 +129,9 @@ inizialiMaiuscole("ciao")
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
    Usa slice. Prova con "EPICODE".
 */
+function togliPrimoEUltimo(){
+   
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
