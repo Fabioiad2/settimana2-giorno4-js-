@@ -73,7 +73,7 @@ function epify(testo){
    if(testo.startsWith('EPICODE')){
       return testo
    }
-   return testo.concat(' epicode')
+   return testo + ' epicode'
 }
 console.log(epify("CIAO"))
 
@@ -117,22 +117,33 @@ invertiStringa("Fabio")
 /* SCRIVI QUI LA TUA RISPOSTA */
 function inizialiMaiuscole(text=""){
    const paroleMaiucole = []
-   for(let t = 0; t < text.length; t++){
-      let parolaModificata = 
-      paroleMaiucole.push()
+   const parole = text.split(' ')
+   for(let t = 0; t < parole.length; t++){
+      let p = parole[t]
+      // prende il primo carattere di ogni parola col for quindi ciao prende c
+      const parolaModificataa = p.slice(0,1).toUpperCase()
+      // prende il resto dei caretteri
+      const resto  = p.slice(1)
+      // inserisce entrambi nell'array parole maiuscole
+      paroleMaiucole.push(`${parolaModificataa}${resto}`)
       console.log(paroleMaiucole)
    }
+   const paroleUnite = paroleMaiucole.join(' ')
+   console.log(paroleUnite)
+   return paroleUnite
 }
-inizialiMaiuscole("ciao")
+inizialiMaiuscole("Ciao mario")
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
    Usa slice. Prova con "EPICODE".
 */
-function togliPrimoEUltimo(){
-   
+function togliPrimoEUltimo(testo=""){
+   let testoModificato = testo.slice(1,testo.length - 1)
+   console.log(testoModificato)  
 }
 
+ togliPrimoEUltimo("Epicode")
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10 — dammiCasuali
@@ -158,3 +169,6 @@ dammiCasuali()
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
