@@ -140,7 +140,7 @@ inizialiMaiuscole("ciao")
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 function dammiCasuali(n) {
-   let casuale = Math.floor(Math.random) * 10
+   let casuale = Math.floor(Math.random() * 11)
    console.log(casuale)
 }
 dammiCasuali()
