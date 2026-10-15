@@ -170,5 +170,15 @@ dammiCasuali()
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function etaInGiorni(annoNascita, meseNascita, giornoNascita){
+   annoNascita = 2007
+   let mese = 6
+   let giorno = 8
+   let annoAttuale = new Date().getFullYear()
+   let anniPersona = annoAttuale -  annoNascita
+   let giorniDiVita = anniPersona * 365
+   console.log(giorniDiVita)
 
+}
 
+etaInGiorni()
