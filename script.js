@@ -69,12 +69,26 @@ console.log(dentroIntervallo(400))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function epify(testo){
+   if(testo.startsWith('EPICODE')){
+      return testo
+   }
+   return testo.concat(' epicode')
+}
+console.log(epify("CIAO"))
 
 /* ESERCIZIO 6 — divisibilePer3o7
    Funzione divisibilePer3o7(n): true se n positivo E divisibile per 3 O per 7.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+function divisibilePer3(n){
+   // se n resto 3 === 0 è divisiible
+   if((n % 3) === 0){
+      return true
+   }
+   return false
+}
+console.log(divisibilePer3(3))
 
 /* ESERCIZIO 7 — invertiStringa
    Funzione invertiStringa(testo): ritorna la stringa invertita.
@@ -83,6 +97,16 @@ console.log(dentroIntervallo(400))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// funzione che accetta parametro string creo array contenitore nel for dico che l'indice parte dalla lunghezza meno 1 quindi sarebbe l'ultimo elemento della lista per ogni uno di questo scende di meno 1 per contarli tutti
+function invertiStringa(testo=""){
+   const arrayInvertito = []
+   for(i = testo.length - 1; i>=0; i--){
+      arrayInvertito.push(testo[i])
+   }
+   console.log(arrayInvertito.join(''))
+}
+invertiStringa("Fabio")
+
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
