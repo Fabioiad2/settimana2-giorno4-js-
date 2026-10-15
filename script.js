@@ -9,6 +9,10 @@ REGOLE
    Funzione area(l1, l2) che ritorna l1 * l2.
    Stampa area(3, 4).
 */
+function area(l1,l2){
+   return l1 + l2
+}
+console.log(area(3,4))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -17,6 +21,13 @@ REGOLE
    Se a === b: ritorna (a + b) * 3.
    Prova con (2, 3) e (4, 4).
 */
+function sommapazza(a,b){
+   if(a === b){
+      return  (a+b) * 3
+   }
+   return a + b
+}
+console.log(sommapazza(4,4))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -25,6 +36,15 @@ REGOLE
    Se n > 19: ritorna distanza * 3.
    Prova con 5 e 25.
 */
+function distanzaDa19(n){
+   // se n che sarebbe il parametro che aggiungo quando richiamo la funzione è maggiore di 19 che è la "nostra costante" 
+   // (n - 19) è la distanza e la moltiplico per 3
+   if(n > 19){
+     return Math.abs(n - 19) * 3
+   }
+   return Math.abs(n - 19)
+}
+console.log(distanzaDa19(5))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -32,6 +52,13 @@ REGOLE
    Funzione dentroIntervallo(n):
    true se n è tra 20 e 100 (compresi) oppure è esattamente 400.
 */
+function dentroIntervallo(n){
+   if(n >= 20 && n < 101 || n === 400){
+      return true
+   }
+   return false
+}
+console.log(dentroIntervallo(400))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
