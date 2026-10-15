@@ -115,6 +115,15 @@ invertiStringa("Fabio")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function inizialiMaiuscole(text=""){
+   const paroleMaiucole = []
+   for(let t = 0; t < text.length; t++){
+      let parolaModificata = 
+      paroleMaiucole.push()
+      console.log(paroleMaiucole)
+   }
+}
+inizialiMaiuscole("ciao")
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
@@ -126,10 +135,15 @@ invertiStringa("Fabio")
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
    Usa Math.random e Math.floor.
+
+   
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function dammiCasuali(n) {
+   let casuale = Math.floor(Math.random) * 10
+   console.log(casuale)
+}
+dammiCasuali()
 /* --EXTRA-- ESERCIZIO 11 — etaInGiorni
    Funzione etaInGiorni(annoNascita, meseNascita, giornoNascita).
    Ritorna l'età in giorni rispetto a oggi.
